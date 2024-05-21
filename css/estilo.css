@@ -1,0 +1,540 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@media screen and (max-width: 768px) {
+    /* Estilos específicos para pantallas de hasta 768px de ancho */
+    body {
+        font-size: 14px;
+    }
+
+    /* Agrega más estilos específicos según sea necesario */
+}
+
+@media screen and (max-width: 480px) {
+    /* Estilos específicos para pantallas de hasta 480px de ancho */
+    body {
+        font-size: 12px;
+    }
+
+    /* Agrega más estilos específicos según sea necesario */
+}
+
+body {
+    background: #ecebeb;
+}
+
+/*Atributos que contienen todas las paginas*/
+.contenido_total {
+    padding-top: 110px;
+}
+
+.wrapper {
+    width: 90%;
+    max-width: 1300px;
+    min-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+
+/*Modificaciones header*/
+
+/*Adaptación para cualquier dimensión de la página*/
+@media (max-widht: 950px) {
+
+    header .logo,
+    header nav {
+        width: 100%;
+        text-align: center;
+        line-height: 100px
+    }
+}
+
+header {
+    width: 100%;
+    overflow: hidden;
+    background: #fff;
+    margin-bottom: 20px;
+    position: fixed;
+    height: 100px;
+    opacity: 90%;
+}
+
+header .logo {
+    font-size: 35px;
+    line-height: 100px;
+    float: left;
+}
+
+/*Modificaciones del navegador*/
+header nav {
+    float: right;
+    line-height: 100px;
+}
+
+header nav a {
+    display: inline-block;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    padding: 10px 20px;
+    line-height: normal;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+    -webkit-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    transition: all 500ms ease;
+}
+
+header nav a:hover {
+    background: #f5eded;
+    opacity: 90%;
+    text-decoration: underline
+}
+
+/*Modificación botón donde indica en qué página estás*/
+.btnup {
+    background: #c9b4b4;
+    text-decoration: underline;
+}
+
+/*Fin de las modificaciones del header*/
+
+/* Modificación footer*/
+footer {
+    background-color: #ecebeb;
+    padding: 70px 0;
+}
+
+.div_footer {
+    max-width: 1170px;
+    background-color: rgb(223, 223, 223);
+    margin: auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul {
+    list-style: none;
+}
+
+.footer-col {
+    width: 25%;
+    padding: 0 15px;
+}
+
+.footer-col h4 {
+    font-size: 18px;
+    color: #464343;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+}
+
+.footer-col h4 ::before {
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #e91e63;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+
+}
+
+.footer-col ul li:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #ffffff;
+    font-weight: 300;
+    color: #585454;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+    color: #ffffff;
+    padding-left: 8px;
+}
+
+.footer-col .redes a {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+}
+
+.footer-col .redes a:hover {
+    color: #24262b;
+    background-color: #ffffff;
+}
+
+/*Fin de la modificación del header*/
+
+/*******************************************************/
+/*               Estilos para el Indice                */
+/*******************************************************/
+
+/*Section 1*/
+
+.indice1{
+    text-align: center;
+}
+
+div.info {
+    width: 400px;
+    display: inline-block;
+    position: relative;
+}
+
+.info-img img {
+    float: left;
+    height: 360px;
+    width: 260px;
+    padding-right: 20px;
+    max-width: 100%;
+    height: auto;
+}
+
+.text-img {
+    position: relative;
+    top: 50px;
+    margin-left: 200px;
+    max-width: 100%;
+    height: auto;
+}
+
+.text-img p {
+    padding: 5px
+    
+}
+
+.hover-text {
+    padding: 10px;
+    font-size: 15px;
+}
+
+.hover-text :hover {
+    cursor: pointer;
+    color: rgb(190, 186, 186);
+    transition: all 0.3s ease;
+}
+
+/*Sección 2*/
+h2 {
+    padding-top: 50px;
+}
+
+.slider {
+    width: 95%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slider ul {
+    display: flex;
+    padding: 0;
+    width: 280%;
+    padding-left: 450px;
+
+    animation: cambio 15s infinite;
+
+}
+
+.slider li {
+    list-style: none;
+    width: 50%;
+}
+
+.slider img {
+    width: 60%;
+    max-width: 100%;
+    height: auto;
+}
+
+@keyframes cambio {
+
+    /*Secuencia de animación que muestra diferentes modelos de zapatos*/
+    0% {
+        margin-left: -10px;
+    }
+
+    20% {
+        margin-left: 0;
+    }
+
+    25% {
+        margin-left: -800px
+    }
+
+    45% {
+        margin-left: -850px
+    }
+
+    50% {
+        margin-left: -1400px
+    }
+
+    70% {
+        margin-left: -2400px
+    }
+
+    75% {
+        margin-left: -3400px
+    }
+
+    100% {
+        margin-left: 0
+    }
+}
+
+/*Sección 3*/
+.acerca_de {
+    display: block;
+    margin-left: 100px;
+    padding-top: 40px;
+    margin-right: 600px;
+    text-align: center;
+    left: 250px;
+    position: relative;
+}
+
+.img_acerca img {
+    width: 500px;
+    float: right;
+    top: 20px;
+    display: block;
+    right: 380px;
+    position: relative;
+    filter: opacity(70%);
+    max-width: 100%;
+    height: auto;
+}
+
+/*******************************************************/
+/*             Fin de estilos para el Indice           */
+/*******************************************************/
+/*******************************************************/
+/*               Estilos para la galeria               */
+/*******************************************************/
+.contenido_galeria {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3em;
+}
+
+.titulo_galeria {
+    margin-bottom: 280px;
+    display: block;
+    left: 20px;
+    position: sticky;
+    top: 140px;
+    margin-right: 50px;
+    font-size: 20px
+}
+
+div.galeria {
+    margin: 10px 20px;
+    float: left;
+    width: 350px
+}
+
+div.galeria .foto {
+    display: block;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+div.galeria img {
+    max-width: 100%;
+    display: block;
+    transition: 2s;
+    max-width: 100%;
+    height: auto;
+}
+
+div.galeria img:hover {
+    transform: translateY(-2%);
+    filter: opacity(50%);
+}
+
+div.pie {
+    text-align: center;
+    padding: 10px;
+}
+
+/*******************************************************/
+/*             Fin de estilos para la galeria          */
+/*******************************************************/
+
+/*******************************************************/
+/*               Estilos para presupuestos             */
+/*******************************************************/
+
+h1 {
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+form {
+    background-color: rgb(179, 179, 179);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1000px;
+    padding: 3px 16px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    width: 224px;
+    margin: 0.5rem 0;
+}
+
+label {
+    font-size: 14.4px;
+    margin-bottom: 10px;
+    color: rgb(22, 22, 22);
+    font-weight: bold;
+}
+
+.field input {
+    font-size: 17.6px;
+    height: 35.2px;
+    padding-left: 8px;
+}
+
+.textcom {
+    display: flex;
+    flex-direction: column;
+    width: 480px;
+    margin: 12px 0;
+}
+
+textarea {
+    font-size: 17.6px;
+    max-width: 100%;
+    height: 80px;
+    padding-top: 8px;
+    padding-left: 8px;
+}
+
+div .opciones {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 320px;
+    margin: 12px 0;
+    justify-content: flex-start;
+    padding: 0.5rem
+}
+
+.opciones div input {
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+
+.privacidad {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.submit {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+button {
+    padding: 0.5rem 1rem;
+    border: 2px solid black;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+/*******************************************************/
+/*             Fin de estilos para la galeria          */
+/*******************************************************/
+/*******************************************************/
+/*               Estilos para contacto                 */
+/*******************************************************/
+.contactoimg {
+    display: flex;
+}
+
+.contactoimg img {
+    width: 650px;
+    margin-left: 20px;
+    max-width: 100%;
+    height: auto;
+
+}
+
+.contactotext1 {
+    display: block;
+    float: left;
+    margin-left: 30px;
+    margin-top: 15px;
+
+}
+
+.contactotext2 {
+    display: block;
+    float: right;
+    margin-right: 15px;
+    margin-top: 15px;
+}
+
+.contactotext1 p {
+    padding-top: 3px;
+}
+
+.contactotext2 p {
+    padding-top: 3px;
+}
+
+iframe {
+    display: block;
+    position: relative;
+    margin-left: 350px;
+    margin-top: 100px;
+    width: 50%;
+    border: 2px double #c5c0c0;
+}
+
+/*******************************************************/
+/*             Fin de estilos para contacto            */
+/*******************************************************/
